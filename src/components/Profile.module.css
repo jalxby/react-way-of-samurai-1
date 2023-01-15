@@ -3,6 +3,12 @@
     background-color: cornflowerblue;
 }
 
+.img{
+    width: 1000px;
+    height: 90px;
+}
+
 .item {
 color: #f8f8f8;
 }
+

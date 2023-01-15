@@ -1,8 +1,13 @@
 .nav {
     grid-area: n;
-    background-color: chartreuse;
+    background-color: #ff8800;
 }
 
 .item {
     color: white;
+
+}
+
+.item.active{
+    color: #62d2c1;
 }
