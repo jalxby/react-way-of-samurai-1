@@ -1,9 +1,11 @@
-import './Profile.module.css'
+import s from'./Profile.module.css'
+
+
 const Profile = () => {
     return (
-        <div className={'content'}>
+        <div className={s.content}>
             <div>
-                <img className={'contentImg'}
+                <img className={s.contentImg}
                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjg-hec6jMJyxB4GtjgUtzaxwau2UuTRqh9w&usqp=CAU"
                      alt=""/>
             </div>
@@ -15,11 +17,11 @@ const Profile = () => {
                 <div>
                     New post
                 </div>
-                <div className={'posts'}>
-                    <div className={'item'}>
+                <div className={s.posts}>
+                    <div className={s.item}>
                         post1
                     </div>
-                    <div className={'item'}>
+                    <div className={s.item}>
                         post2
                     </div>
                 </div>
