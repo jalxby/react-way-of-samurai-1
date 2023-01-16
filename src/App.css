@@ -11,6 +11,15 @@
     grid-gap: 10px;
 }
 
+.app-wrapper-content {
+    grid-area: c;
+    background-color: cornflowerblue;
+}
+
+.app-wrapper-content img {
+    width: 1000px;
+    height: 60px;
+}
 
 
 
