@@ -1,0 +1,25 @@
+.dialogs{
+    display: grid;
+
+    grid-template-areas:
+                "d m";
+    /*grid-template-rows: 60px 1fr;*/
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+}
+.dialogsItems{
+    background-color: #62d2c1;
+    grid-area: d;
+    padding: 20px;
+}
+
+.dialogsItems .active{
+    color: brown;
+}
+.dialog{}
+.messages{
+    background-color: burlywood;
+    grid-area: m;
+    padding: 20px;
+}
+.message{}
