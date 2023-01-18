@@ -2,6 +2,8 @@ import s from './Post.module.css'
 
 
 const Post = (props) => {
+
+
     return (
         <div className={s.item}>
             <img
@@ -9,7 +11,7 @@ const Post = (props) => {
                 alt=""/>
             {props.message}
             <div>
-                <span>like {props.likeCount}</span>
+                <span>likes: {props.likeCount}</span>
             </div>
         </div>
     );
