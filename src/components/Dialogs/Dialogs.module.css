@@ -1,4 +1,4 @@
-.dialogs{
+.dialogs {
     display: grid;
 
     grid-template-areas:
@@ -7,19 +7,31 @@
     grid-template-columns: 2fr 10fr;
     grid-gap: 10px;
 }
-.dialogsItems{
+
+.dialogsItems {
     background-color: #62d2c1;
     grid-area: d;
     padding: 20px;
 }
-
-.dialogsItems .active{
-    color: brown;
+a{
+    color: #ffffff;
+    text-decoration: none;
 }
-.dialog{}
-.messages{
+a:hover{
+    color: #ff8800;
+}
+a:active {
+    color: black;
+}
+
+/*.dialog a{*/
+/*}*/
+
+.messages {
     background-color: burlywood;
     grid-area: m;
     padding: 20px;
 }
-.message{}
+
+.message {
+}
