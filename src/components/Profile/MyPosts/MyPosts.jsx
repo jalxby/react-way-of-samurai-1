@@ -6,6 +6,8 @@ const MyPosts = (props) => {
 
 
     let postsData = props.posts.map(p => <Post message={p.message} likeCount={p.likesCount}/>)
+
+
     return (
         <div className={s.postsBlock}>
             <h3>My posts</h3>
@@ -20,7 +22,7 @@ const MyPosts = (props) => {
             <div className={s.posts}>
                 {postsData}
 
-                <Post/>
+
             </div>
         </div>
     );
