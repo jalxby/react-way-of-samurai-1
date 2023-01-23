@@ -27,6 +27,7 @@ const App = (props) => {
             </div>
         </div>
     </BrowserRouter>);
+
 }
 
 export default App;
