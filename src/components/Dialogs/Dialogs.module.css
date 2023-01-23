@@ -13,13 +13,16 @@
     grid-area: d;
     padding: 20px;
 }
-a{
+
+a {
     color: #ffffff;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: #ff8800;
 }
+
 a:active {
     color: black;
 }

@@ -4,7 +4,7 @@ import Message from "./Message/Message";
 import React from "react";
 
 let newMessageElement = React.createRef();
-let sendMessage=() =>{
+let sendMessage = () => {
     let text = newMessageElement.current.value
     alert(text)
 }

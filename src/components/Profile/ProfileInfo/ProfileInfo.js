@@ -2,7 +2,7 @@ import s from "./ProfileInfo.module.css";
 
 
 const ProfileInfo = () => {
-    return(
+    return (
         <div>
             <div>
                 <img className={s.img}
