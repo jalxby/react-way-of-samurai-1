@@ -9,7 +9,7 @@ import {addPost, updateNewPostText} from "./redux/state";
 
 // addPost('Hey hey!');
 const root = ReactDOM.createRoot(document.getElementById('root'));
-let rerenderEntireTree = () => {
+let rerenderEntireTree = (state) => {
 
     root.render(
         <React.StrictMode>

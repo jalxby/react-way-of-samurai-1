@@ -1,5 +1,4 @@
 let rerenderEntireTree = () => {
-    console.log('state changed')
 }
 
 let state = {
@@ -52,6 +51,9 @@ export const updateNewPostText = (newText) => {
     rerenderEntireTree(state);
 }
 export const subscribe = (observer) => {
-    rerenderEntireTree = observer
+    rerenderEntireTree = observer;          //Pattern Observer
 }
 export default state
+
+
+//store - OOP
