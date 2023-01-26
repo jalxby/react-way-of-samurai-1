@@ -1,6 +1,6 @@
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import store from "./redux/state";
+import store, {addPostActionCreator, updateNewPostTextActionCreator} from "./redux/state";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -12,7 +12,10 @@ let rerenderEntireTree = (state) => {
 
     root.render(
         <React.StrictMode>
-            <App state={state} dispatch={store.dispatch.bind(store)}/>
+            <App state={state}
+                 dispatch={store.dispatch.bind(store)}
+                 addPostActionCreator={addPostActionCreator}
+                 updateNewPostTextActionCreator={updateNewPostTextActionCreator}/>
         </React.StrictMode>
     );
 }

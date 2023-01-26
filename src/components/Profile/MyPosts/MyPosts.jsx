@@ -2,16 +2,20 @@ import s from './MyPosts.module.css'
 import Post from "./Post/Post";
 import React from 'react';
 
+
+
+
 const MyPosts = (props) => {
+    debugger
     let postsData = props.posts.map(p => <Post message={p.message} likeCount={p.likesCount}/>)
     let newPostElement = React.createRef();
     let addPost = () => {
-        props.dispatch({type: 'ADD-POST'});
+        props.dispatch(props.addPostActionCreator());
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        let action = {type: 'UPDATE-NEW-POST-TEXT', newText: text}
+        let action = props.updateNewPostTextActionCreator(text)
         props.dispatch(action)
     }
 
