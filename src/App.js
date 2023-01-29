@@ -21,7 +21,7 @@ const App = (props) => {
                                  addPostActionCreator={props.addPostActionCreator}
                                  updateNewPostTextActionCreator={props.updateNewPostTextActionCreator}/>}/>
                     <Route path={'/dialogs*'} element={
-                        <Dialogs state={props.state.dialogsPage}/>}/>
+                        <Dialogs state={props.state.dialogsPage} store={props.store}/>}/>
                     <Route path={'/news'} element={1}/>
                     <Route path={'/music'} element={2}/>
                     <Route path={'/settings'} element={3}/>
